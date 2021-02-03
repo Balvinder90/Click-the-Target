@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Click,Game,Random" />
+    <meta name="description" content="Random Click Game" />
+    <meta name="author" content="Balvinder Singh" />
+    <title>Click the Target</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="fav/favicon-16x16.png"
+    />
+    <link rel="manifest" href="fav/site.webmanifest" />
+    <link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <!-- Container Start -->
+    <div class="container">
+      <!-- Rules Section Start-->
+      <section class="rules center">
+        <p>The Rules :</p>
+        <p>
+          Your goal is to click the target as many times as possible within 20
+          seconds.
+        </p>
+        <p>
+          A score of <span class="red">6</span> will award you a
+          <span class="bronze">bronze</span> medal.
+        </p>
+        <p>
+          A score of <span class="red">9</span> will award you a
+          <span class="silver">silver</span> medal.
+        </p>
+        <p>
+          A score of <span class="red">12</span> will award you a
+          <span class="gold">gold</span> medal.
+        </p>
+        <button class="play">Play</button>
+      </section>
+      <!-- Rules Section End-->
+      <!-- Scores Section Start -->
+      <section class="scores center d-none">
+        <div class="scores-container">
+          <div class="current-score">
+            <p>Score</p>
+            <div class="circle light-blue"></div>
+          </div>
+          <div class="high-score">
+            <p>High score</p>
+            <div class="circle light-red"></div>
+          </div>
+          <div class="medal">
+            <p>Medal</p>
+            <div class="perspective">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+        <button class="play-again">Play again</button>
+        <button class="reset-highscore">Reset High Score?</button>
+      </section>
+      <!-- Scores Section End -->
+      <!-- Target Section Start -->
+      <img src="img/target.png" alt="Target" class="target d-none" />
+      <!-- Target Section End -->
+    </div>
+    <!-- Container End -->
+    <!-- Script Start -->
+    <script src="js/javascript.js"></script>
+    <!-- Script End -->
+  </body>
+</html>

@@ -1,0 +1,208 @@
+/* FONT */
+@font-face {
+  font-family: "nineteen_ninety_sevenregular";
+  src: url("../font/nineteenninetyseven-11xb-webfont.woff2") format("woff2"),
+    url("../font/nineteenninetyseven-11xb-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* BASE STYLING */
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "nineteen_ninety_sevenregular";
+  background-color: #111;
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+/* RULES */
+.rules p {
+  margin-bottom: 3rem;
+}
+
+.play,
+.play-again,
+.reset-highscore {
+  background-color: #ff8d48;
+  color: #111;
+  border: none;
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.6rem 2rem;
+  transition: all 0.7s;
+}
+
+.play:hover,
+.play-again:hover,
+.reset-highscore:hover {
+  opacity: 0.65;
+  cursor: pointer;
+}
+
+/* SCORES */
+.scores {
+  width: 100%;
+}
+
+.scores button {
+  margin-top: 3rem;
+}
+
+.scores-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.current-score,
+.high-score,
+.medal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scores p {
+  margin-right: 1rem;
+}
+
+/* TARGET */
+.target {
+  position: fixed;
+}
+
+.target:hover {
+  cursor: pointer;
+  filter: brightness(130%);
+}
+
+/* UTILITIY CLASSES */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1.5rem;
+}
+
+.d-none {
+  display: none;
+}
+
+.fade-out {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.fade-in {
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+.center {
+  text-align: center;
+}
+
+.red {
+  color: #f61f1f;
+}
+
+.bronze {
+  color: #8a652b;
+}
+
+.silver {
+  color: #888;
+}
+
+.gold {
+  color: #edc81d;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #111;
+  height: 5.5rem;
+  width: 5.5rem;
+  padding: 2.4rem;
+  border-radius: 50%;
+}
+
+.light-blue {
+  background-color: #a2e1ff;
+}
+
+.light-red {
+  background-color: #ff8c8c;
+}
+
+.light-green {
+  background-color: #8cff91;
+}
+
+.bronze-medal {
+  background-color: #8a652b;
+}
+
+.silver-medal {
+  background-color: #888;
+}
+
+.gold-medal {
+  background-color: #edc81d;
+}
+
+.perspective {
+  perspective: 20rem;
+}
+
+/* MEDAL ANIMATION */
+@keyframes example {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.medal-animation {
+  animation: example 2s infinite;
+}
+
+@media only screen and (max-width: 41.25em) {
+  html {
+    font-size: 55%;
+  }
+
+  .scores-container {
+    flex-wrap: wrap;
+  }
+
+  .current-score,
+  .high-score,
+  .medal {
+    flex-basis: 100%;
+  }
+
+  .high-score {
+    margin: 2rem 0rem;
+  }
+}
