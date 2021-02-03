@@ -3,9 +3,10 @@ A game where you have to click the target which appears randomly on the screen w
 
 # Features
 1. Highscore is stored in local storage
-2. Highscore can be reset which clears local storage
-3. Game round is updated in the title tab with each new game
+2. Highscore can be reset which clears the local storage
+3. Game round is updated in the title tab with each new round
 4. Modern JavaScript
 5. Retro design
 6. The medal awarded is given a simple rotating animation
-7. Responsive design
+7. Simple fade in and fade out effects used for the interface
+8. Responsive design
